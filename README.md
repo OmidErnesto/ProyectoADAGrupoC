@@ -2,6 +2,6 @@
 Codigo para el Proyecto de Analisis y Diseño de Algoritmos
 
 ## Curso: ADA
-Omid Ernesto Chahuaris Choque  
+**Alumno:**Omid Ernesto Chahuaris Choque
+**Periodo:**Segundo Semestre 2021 B  
 Universidad Nacional de San Agustin  
-Segundo Semestre 2021 B  
