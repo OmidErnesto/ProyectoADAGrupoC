@@ -1,5 +1,6 @@
-public class HeapSort {
-	public void sort(int arreglo[]) {
+package HeapSort;
+public class HeapSort<T> {
+	public <T extends Comparable<T>> void sort(T[] arreglo) {
 		
 		int n = arreglo.length;
 
@@ -10,7 +11,7 @@ public class HeapSort {
 		// Extraer uno por uno los elementos del Heap
 		for (int i = n-1; i>0; i--) {
 			// Insertar la raiz actual al final del arreglo
-			int temp = arreglo[0];
+			T temp = arreglo[0];
 			arreglo[0] = arreglo[i];
 			arreglo[i] = temp;
 
@@ -19,23 +20,23 @@ public class HeapSort {
 		}
 	}
 
-	public void apilar(int arreglo[], int n, int i) {
+	public <T extends Comparable<T>> void apilar(T[] arreglo, int n, int i) {
 		
 		int mayor = i; // Initialize largest as root
 		int izquierdo = 2*i+1; // left = 2*i + 1
 		int derecho = 2*i+2; // right = 2*i + 2
 
 		// Si el hijo izquierdo es mas grande que la raiz
-		if (izquierdo < n && arreglo[izquierdo] > arreglo[mayor])
+		if (izquierdo < n && arreglo[izquierdo].compareTo(arreglo[mayor]) >= 1)
 			mayor = izquierdo;
 
 		// Si el hijo derecho es mas grande que la raiz
-		if (derecho < n && arreglo[derecho] > arreglo[mayor])
+		if (derecho < n && arreglo[derecho].compareTo(arreglo[mayor]) >= 1)
 			mayor = derecho;
 
 		// Si el mas grande no es la raiz
 		if (mayor != i) {
-			int aux = arreglo[i];
+			T aux = arreglo[i];
 			arreglo[i] = arreglo[mayor];
 			arreglo[mayor] = aux;
 
@@ -45,7 +46,7 @@ public class HeapSort {
 	}
 
 	/* Imprimir */
-	public static void printArray(int arreglo[]) {
+	public void printArray(T[] arreglo) {
 		int n = arreglo.length;
 		for (int i=0; i<n; i++)
 			System.out.print(arreglo[i] + " ");
