@@ -22,9 +22,9 @@ public class HeapSort<T> {
 
 	public <T extends Comparable<T>> void apilar(T[] arreglo, int n, int i) {
 		
-		int mayor = i; // Initialize largest as root
-		int izquierdo = 2*i+1; // left = 2*i + 1
-		int derecho = 2*i+2; // right = 2*i + 2
+		int mayor = i; // El mayor como raiz
+		int izquierdo = 2*i+1;
+		int derecho = 2*i+2;
 
 		// Si el hijo izquierdo es mas grande que la raiz
 		if (izquierdo < n && arreglo[izquierdo].compareTo(arreglo[mayor]) >= 1)
