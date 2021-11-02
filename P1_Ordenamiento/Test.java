@@ -46,9 +46,9 @@ public class Test {
         InsertionSort<String> ob6 = new InsertionSort<String>();
         ob6.Insertion(cadenas3);
         
-        System.out.println("El arreglo de enteros ordenado por QuickSort es:");
+        System.out.println("El arreglo de enteros ordenado por InsertionSort es:");
         ob5.printArray(enteros2);
-        System.out.println("El arreglo de cadenas ordenado por QuickSort es:");
+        System.out.println("El arreglo de cadenas ordenado por InsertionSort es:");
         ob6.printArray(cadenas2);
         
         
