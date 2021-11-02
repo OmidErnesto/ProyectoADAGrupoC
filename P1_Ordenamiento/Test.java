@@ -1,5 +1,6 @@
 import HeapSort.HeapSort;
 import QuickSort.QuickSort;
+import InsertionSort.InsertionSort;
 
 public class Test {
 	
@@ -34,6 +35,21 @@ public class Test {
         ob3.printArray(enteros2);
         System.out.println("El arreglo de cadenas ordenado por QuickSort es:");
         ob4.printArray(cadenas2);
+        
+        //InsertionSort
+        
+        Integer enteros3[] = {12,50,99,11,13,78,5,24,66,7,70};
+        String cadenas3[] = {"mi","nombre","es","Omid","Chahuaris"};
+        
+        InsertionSort<Integer> ob5 = new InsertionSort<Integer>();
+        ob5.Insertion(enteros3);
+        InsertionSort<String> ob6 = new InsertionSort<String>();
+        ob6.Insertion(cadenas3);
+        
+        System.out.println("El arreglo de enteros ordenado por QuickSort es:");
+        ob5.printArray(enteros2);
+        System.out.println("El arreglo de cadenas ordenado por QuickSort es:");
+        ob6.printArray(cadenas2);
         
         
         
