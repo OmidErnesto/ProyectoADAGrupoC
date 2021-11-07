@@ -1,6 +1,6 @@
 package HeapSort;
 public class HeapSort<T> {
-	public <T extends Comparable<T>> void sort(T[] arreglo) {
+	public <T extends Comparable<T>> void Heap_Sort(T[] arreglo) {
 		
 		int n = arreglo.length;
 

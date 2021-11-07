@@ -5,7 +5,9 @@ public class QuickSort<T> {
 	
 	public <T extends Comparable<T>> void Qsort(T A[], int izquierda, int derecha) {
 		int n = A.length;
-		if(n <= 20) {
+		// Usamos el valor de 32 porque en el articulo "Fast Quicksort Implementation Using AVX Instructions" lo recomienda
+		// https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1009.7773&rep=rep1&type=pdf
+		if(n < 32) {
 			InsertionSort.Insertion(A);
 		}
 		else {
