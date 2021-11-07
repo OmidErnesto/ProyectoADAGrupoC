@@ -1,3 +1,6 @@
+
+Los datos de prueba estan dos arreglos, basta cambiar con el tipo de dato de comparación y los datos de los arreglos de "enteros" y "cadenas".
+
 ## Información de los métodos
 
 **Heap_Sort:** Método que reorganiza el arreglo y extrae uno a uno un elemento del Heap apoyándose del método apilar. Recibe únicamente como  parámetro el arreglo comparable a ordenar.
@@ -22,7 +25,7 @@ Peor Caso: O(n2)
 Caso medio: O(n2)  
 Mejor caso: O(n2)  
 ```
-QuickSoert:  
+QuickSort:  
 ```
 Peor Caso: O(n2)   
 Caso medio: O(nlogn)  
