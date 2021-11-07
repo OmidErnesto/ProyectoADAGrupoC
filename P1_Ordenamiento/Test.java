@@ -1,6 +1,5 @@
 import HeapSort.HeapSort;
 import QuickSort.QuickSort;
-import InsertionSort.InsertionSort;
 
 public class Test {
 	
@@ -9,7 +8,7 @@ public class Test {
         Integer enteros[] = {12,50,99,11,13,78,5,24,66,7,70};
         String cadenas[] = {"mi","nombre","es","Omid","Chahuaris"};
         
-      //HeapSort
+        //HeapSort
         
         HeapSort<Integer> ob = new HeapSort<Integer>();
         ob.sort(enteros);
@@ -36,6 +35,7 @@ public class Test {
         System.out.println("El arreglo de cadenas ordenado por QuickSort es:");
         ob4.printArray(cadenas2);
         
+        /*
         //InsertionSort
         
         Integer enteros3[] = {12,50,99,11,13,78,5,24,66,7,70};
@@ -50,7 +50,7 @@ public class Test {
         ob5.printArray(enteros2);
         System.out.println("El arreglo de cadenas ordenado por InsertionSort es:");
         ob6.printArray(cadenas2);
-        
+        */
         
         
         

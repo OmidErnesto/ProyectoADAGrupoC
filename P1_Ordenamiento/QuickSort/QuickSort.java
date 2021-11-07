@@ -1,7 +1,19 @@
 package QuickSort;
-public class QuickSort<T> {
+import InsertionSort.InsertionSort;
 
-    public <T extends Comparable<T>> void Qsort(T A[], int izquierda, int derecha) {
+public class QuickSort<T> {
+	
+	public <T extends Comparable<T>> void Qsort(T A[], int izquierda, int derecha) {
+		int n = A.length;
+		if(n <= 20) {
+			InsertionSort.Insertion(A);
+		}
+		else {
+			QsortAux(A,izquierda,derecha);
+		}
+	}
+
+    public <T extends Comparable<T>> void QsortAux(T A[], int izquierda, int derecha) {
 
         T piv = A[izquierda]; 	  //el pivote sera el primer elemento
         int i = izquierda;        //busqueda de izquierda a derecha

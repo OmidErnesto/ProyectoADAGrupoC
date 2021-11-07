@@ -2,7 +2,7 @@ package InsertionSort;
 
 public class InsertionSort<T> {
 
-    public <T extends Comparable<T>> void Insertion(T[] arreglo) {
+    public static <T extends Comparable<T>> void Insertion(T[] arreglo) {
     	
         int i, j;					//Indices de la lista
         T aux;						//Variable auxiliar para intercambiar valores
