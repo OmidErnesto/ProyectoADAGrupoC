@@ -6,7 +6,7 @@ public class DepthFirstSearch {
 	
 	public static void DFS(int[][] array,int ancho,int alto,int num) { 
 	     	
-			int base = array[ancho][ancho]; 
+			int base = array[ancho][alto]; 
 	        int limiteHorizontal = array.length; 
 	        int limiteVertical = array[0].length; 
 	         
@@ -14,7 +14,7 @@ public class DepthFirstSearch {
 	         
 	        Stack<String> stack = new Stack<>(); 
 	 
-	        stack.push(ancho + "," + ancho); 
+	        stack.push(ancho + "," + alto); 
 	 
 	        while (stack.empty() == false) { 
 	            String x = stack.pop(); 

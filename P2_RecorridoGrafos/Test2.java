@@ -13,7 +13,7 @@ public class Test2 {
 
 		BufferedImage img = null;
 		try {
-			img = ImageIO.read(new File("P2_RecorridoGrafos/images/imagen.png"));
+			img = ImageIO.read(new File("P2_RecorridoGrafos/images/dory.jpg"));
 			escalaGrises(img);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -52,9 +52,8 @@ public class Test2 {
 		int resultado [][] = new int[imagen.getWidth()][imagen.getHeight()];
 
 		asignarMatriz(imagen,resultado);
-		imprimirMatriz(resultado);
-		System.out.println("\nMatriz por recorrido DFS en la coordenada (6,15) con un limite de 20 pixeles\n");
-		DepthFirstSearch.DFS(resultado,6,15,20);
+		System.out.println("\nMatriz por recorrido DFS en la coordenada (362,425) con un limite de 80 pixeles para ver la cola amarilla de Dory\n");
+		DepthFirstSearch.DFS(resultado,362,425,80);
 		imprimirMatriz(resultado);
 
 	}
@@ -79,8 +78,11 @@ public class Test2 {
 	private static void imprimirMatriz(int resultado[][]) {
 
 		for (int x = 0; x < resultado.length; x++) { 
-			for (int y = 0; y < resultado[x].length; y++) { 
-				System.out.print (resultado[x][y]+" \t"); 
+			for (int y = 0; y < resultado[x].length; y++) {
+				if(resultado[x][y]== 1)
+					System.out.print (resultado[x][y]+" \t");
+				else
+					System.out.print ("0 \t");
 			}
 			System.out.println();
 		} 
